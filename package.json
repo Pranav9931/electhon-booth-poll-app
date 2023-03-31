@@ -1,0 +1,31 @@
+{
+  "name": "barclays-backend",
+  "version": "1.0.0",
+  "description": "The backend architecture of Barclay's Hackathon 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranav9931/barclays-backend.git"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs",
+    "backend"
+  ],
+  "author": "Pranav Kumar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Pranav9931/barclays-backend/issues"
+  },
+  "homepage": "https://github.com/Pranav9931/barclays-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.18.0",
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
+}
