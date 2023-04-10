@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
-import { Typography } from '@mui/material';
+
+import { Routes, Route } from "react-router-dom"
+import { PollVotePage } from './pages';
+import { NavbarComponent } from './components';
 
 function App() {
   return (
     <div className="App">
-      Hello World
-      <Typography>Hello World!</Typography>
+      <NavbarComponent />
+      <Routes>
+        <Route path="/" />
+        <Route path="/poll" element={<PollVotePage />} />
+      </Routes>
     </div>
   );
 }
