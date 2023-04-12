@@ -1,6 +1,9 @@
 .App {
   margin: 0 auto;
   max-width: 600px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .App-logo {
