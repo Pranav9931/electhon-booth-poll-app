@@ -6,15 +6,18 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
+import { StateContextProvider } from './context/stateContextAPI';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <StateContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StateContextProvider>
   </React.StrictMode>
 );
 
