@@ -8,12 +8,15 @@ import { Footer, NavbarComponent } from './components';
 function App() {
   return (
     <div className="App">
-      <NavbarComponent />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<>
+          <NavbarComponent />
+          <HomePage />
+          <Footer />
+        </>} />
         <Route path="/poll" element={<PollVotePage />} />
       </Routes>
-      <Footer />
+
     </div>
   );
 }

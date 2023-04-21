@@ -54,7 +54,7 @@ const HomePage = () => {
 
     return (
         <Home>
-            <Typography color="primary" className="h1">Register</Typography>
+            <Typography color="primary" style={{ fontWeight: 700, padding: '10px 0', fontSize: 'large' }}>Register</Typography>
             <Typography color="primary">Register yourself to vote.</Typography>
             <Typography color="secondary">वोट करने के लिए खुद को रजिस्टर करें।</Typography>
             <Typography color="green">ಮತ ಚಲಾಯಿಸಲು ನಿಮ್ಮನ್ನು ನೋಂದಾಯಿಸಿಕೊಳ್ಳಿ</Typography>
@@ -64,7 +64,7 @@ const HomePage = () => {
             <Typography color="secondary">अपनी इच्छित विधि का चयन करें।</Typography>
             <Typography color="green">ನೀವು ಬಯಸಿದ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ</Typography>
             <br />
-            <Button variant="contained" color="primary">SQAN YOUR QR</Button>
+            <Button variant="contained" color="primary">SCAN YOUR QR</Button>
 
             <Divider variant="middle" style={{ margin: '15px 0' }} />
 

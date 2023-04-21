@@ -9,13 +9,13 @@ app.use(cors());
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000"],
     methods: ["GET", "POST"],
   },
 });
 
 io.on("connection", (socket) => {
-  console.log("a user connected");
+  console.log("User Connected!");
 
   socket.on("newVoterData", (data) => {
     socket.broadcast.emit("newVoterData", data);
